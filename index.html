@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>점찍기 개인정보처리방침</title>
+<meta name="description" content="점찍기 앱의 개인정보처리방침 — 기기 내 저장, Google AdMob 광고, 권한, 삭제 방법">
+<style>
+  :root { --bg: #F5F4FF; --card: #fff; --ink: #17161F; --ink2: #4B4A57; --muted: #7E7D8E; --p: #6C5CE7; --line: #E6E4F5; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0F0F16; --card: #1A1A24; --ink: #F2F1FA; --ink2: #C9C8D6; --muted: #7E7D8E; --p: #8B7BFF; --line: #26263A; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", Pretendard, system-ui, sans-serif; letter-spacing: -0.01em; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .logo { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(135deg, #6C5CE7, #B79CFF); position: relative; flex: none; }
+  .logo::after { content: ""; position: absolute; left: 12px; top: 12px; width: 16px; height: 16px; border-radius: 50%; background: #C9F55A; }
+  h1 { font-size: 26px; margin: 0; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+  h2 { font-size: 19px; margin: 32px 0 10px; color: var(--p); }
+  p, li { color: var(--ink2); }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 18px; }
+  .summary li { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; background: var(--card); border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--ink); font-weight: 700; background: color-mix(in srgb, var(--p) 8%, var(--card)); }
+  td:first-child { color: var(--ink); font-weight: 600; white-space: nowrap; }
+  a { color: var(--p); word-break: break-all; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) { td:first-child { white-space: normal; } }
+</style>
+</head>
+<body>
+<main>
+  <header><div class="logo"></div><h1>점찍기 개인정보처리방침</h1></header>
+  <p class="meta">시행일 2026년 9월 19일 · 버전 1.0</p>
+
+  <p>「점찍기」(이하 "앱")는 생년월일을 바탕으로 오늘의 운세를 보여주고 한 줄 일기를 남기는 Android 앱입니다. 앱 운영자(이하 "운영자")는 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 등 관련 법령을 준수합니다. 이 방침은 앱이 어떤 정보를 다루고, 어디에 저장하며, 이용자가 어떻게 관리할 수 있는지 설명합니다.</p>
+
+  <h2>1. 요약</h2>
+  <ul class="summary">
+    <li>앱은 <strong>회원가입·로그인이 없고, 운영자의 서버가 없습니다.</strong> 이용자가 입력한 정보는 이용자의 기기 안에만 저장되며 운영자에게 전송되지 않습니다.</li>
+    <li>앱은 광고 수익을 위해 <strong>Google AdMob</strong>의 보상형 광고를 사용합니다. 광고가 표시될 때 Google이 광고 식별자 등 일부 정보를 수집할 수 있습니다. 광고는 이용자가 "광고 보고 열기" 버튼을 직접 누를 때만 표시됩니다.</li>
+    <li>이용자는 언제든 앱 설정에서 모든 데이터를 삭제할 수 있고, 앱을 삭제하면 기기 안의 데이터는 함께 삭제됩니다.</li>
+  </ul>
+
+  <h2>2. 앱이 기기에 저장하는 정보</h2>
+  <p>다음 정보는 이용자가 직접 입력하며, <strong>이용자의 기기(앱 전용 저장 공간)에만 저장</strong>됩니다. 운영자는 이 정보에 접근할 수 없습니다.</p>
+  <table>
+    <tr><th>정보</th><th>용도</th><th>필수 여부</th></tr>
+    <tr><td>생년월일, 태어난 시간, 양력/음력</td><td>사주(일간) 계산, 오늘의 운세·타입 표시</td><td>생년월일 필수, 시간 선택</td></tr>
+    <tr><td>태어난 곳(도시), 성별</td><td>진태양시 보정, 대운 방향 계산</td><td>선택</td></tr>
+    <tr><td>닉네임</td><td>앱 안에서 호칭 표시</td><td>선택</td></tr>
+    <tr><td>MBTI, 테토/에겐 태그</td><td>공유 카드 꾸미기</td><td>선택</td></tr>
+    <tr><td>한 줄 일기, 기분, 활동 태그</td><td>기록·달력·통계 표시, 답장 문장 생성</td><td>선택</td></tr>
+    <tr><td>궁합 상대의 이름(별명)과 생년월일</td><td>타입 궁합 계산</td><td>선택</td></tr>
+    <tr><td>알림 시간, 말투 등 설정값</td><td>앱 동작 설정</td><td>—</td></tr>
+  </table>
+  <p>이용자가 입력하는 궁합 상대의 정보는 별명 사용을 권장하며, 마찬가지로 기기 밖으로 전송되지 않습니다.</p>
+
+  <h2>3. 제3자 서비스: Google AdMob (광고)</h2>
+  <p>앱은 Google LLC가 제공하는 AdMob 광고 SDK를 포함합니다. 광고가 요청·표시될 때 Google과 그 광고 파트너는 다음과 같은 정보를 수집·처리할 수 있습니다.</p>
+  <ul>
+    <li>광고 식별자(Android Advertising ID), 기기 종류·OS 버전·언어 등 기기 정보</li>
+    <li>IP 주소 및 이를 통한 대략적 위치</li>
+    <li>광고 노출·클릭·시청 완료 여부 등 광고 상호작용 정보</li>
+  </ul>
+  <p>이 정보는 운영자가 아니라 Google이 자체 개인정보처리방침에 따라 처리합니다.</p>
+  <ul>
+    <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+    <li>Google 광고 및 데이터 사용 안내: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></li>
+    <li>AdMob 광고 파트너 목록: <a href="https://support.google.com/admob/answer/9012903">https://support.google.com/admob/answer/9012903</a></li>
+  </ul>
+  <p>이용자는 Android 설정 &gt; 개인정보 보호 &gt; 광고에서 광고 ID를 삭제하거나 맞춤 광고를 제한할 수 있습니다. 유럽경제지역(EEA)·영국 등 동의가 필요한 지역에서는 앱 최초 실행 시 Google의 동의 관리 플랫폼(UMP)을 통해 광고 동의를 묻습니다.</p>
+  <p>앱은 AdMob 외의 분석 도구, 크래시 리포트 도구, 추적 SDK를 사용하지 않습니다.</p>
+
+  <h2>4. 앱 권한</h2>
+  <table>
+    <tr><th>권한</th><th>용도</th></tr>
+    <tr><td>알림 (POST_NOTIFICATIONS)</td><td>이용자가 설정한 시간에 하루 한 번 기록 알림을 보냅니다. 거부해도 다른 기능은 정상 동작합니다.</td></tr>
+    <tr><td>인터넷 (INTERNET)</td><td>광고 로드에만 사용됩니다. 운세 계산과 기록 저장은 오프라인으로 동작합니다.</td></tr>
+  </table>
+  <p>앱은 연락처, 위치, 카메라, 마이크, 저장소 읽기 권한을 요청하지 않습니다. 공유 카드 이미지는 Android의 미디어 저장소 API를 통해 "Pictures/점찍기" 폴더에 저장되며 별도 권한이 필요하지 않습니다.</p>
+
+  <h2>5. 이용자가 직접 내보내는 정보</h2>
+  <p>다음 기능은 이용자가 버튼을 눌러 직접 실행할 때만 동작하며, 이용자가 선택한 앱·경로로만 전달됩니다.</p>
+  <ul>
+    <li><strong>공유 카드</strong>: 운세 카드 이미지를 Instagram 스토리, 다른 앱, 갤러리로 보냅니다. 닉네임·한 줄 일기는 기본적으로 카드에 들어가지 않으며 이용자가 체크할 때만 포함됩니다.</li>
+    <li><strong>백업 내보내기</strong>: 기록·설정을 JSON 또는 텍스트 파일로 만들어 이용자가 고른 앱(메일, 드라이브 등)으로 공유합니다. 이 파일에는 생년월일과 일기 내용이 담기므로 보관에 주의해 주세요.</li>
+    <li><strong>백업 가져오기</strong>: 이용자가 선택한 백업 파일을 읽어 기기에 병합합니다.</li>
+  </ul>
+
+  <h2>6. 보관 및 삭제</h2>
+  <ul>
+    <li>기기에 저장된 모든 정보는 이용자가 삭제하기 전까지 보관됩니다.</li>
+    <li>앱 설정 &gt; 내 정보 &gt; <strong>전부 지우기</strong>로 생년월일·기록·궁합 상대·설정을 즉시 삭제할 수 있습니다.</li>
+    <li>앱을 삭제(제거)하면 기기 안의 앱 데이터도 함께 삭제됩니다. 단, 이용자가 내보낸 백업 파일과 갤러리에 저장한 카드 이미지는 이용자가 직접 삭제해야 합니다.</li>
+    <li>운영자는 이용자 정보를 보관하지 않으므로 운영자에게 삭제를 요청할 정보가 없습니다.</li>
+  </ul>
+
+  <h2>7. 아동의 개인정보</h2>
+  <p>앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 운영자는 아동의 개인정보를 의도적으로 수집하지 않으며, 앱에는 연령을 확인하는 절차가 없으므로 만 14세 미만 아동은 법정대리인의 동의 하에 사용해야 합니다.</p>
+
+  <h2>8. 국외 이전</h2>
+  <p>운영자는 이용자 정보를 수집·이전하지 않습니다. 다만 AdMob 광고 표시 과정에서 Google이 수집하는 정보는 Google의 정책에 따라 국외(미국 등)에 있는 서버에서 처리될 수 있습니다.</p>
+
+  <h2>9. 운세 콘텐츠에 관한 안내</h2>
+  <p>앱의 운세·타입·궁합 문장은 전통 명리의 일간 관계를 바탕으로 자동 생성되는 참고용 콘텐츠이며, 의학적·법적·재정적 판단의 근거가 아닙니다.</p>
+
+  <h2>10. 방침의 변경</h2>
+  <p>이 방침이 바뀌면 앱 업데이트 및 이 페이지에 시행일과 함께 게시합니다. 중요한 변경(수집 항목 추가 등)이 있을 때는 앱 안에서도 안내합니다.</p>
+
+  <h2>11. 문의</h2>
+  <p>개인정보 처리에 관한 문의·의견은 아래로 보내 주세요.</p>
+  <ul>
+    <li>운영자: [운영자 이름 또는 상호]</li>
+    <li>이메일: [문의 이메일]</li>
+  </ul>
+
+  <footer>이 문서는 2026년 9월 19일 기준 앱 동작(버전 1.0)을 바탕으로 작성되었습니다.</footer>
+</main>
+</body>
+</html>
